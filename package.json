@@ -1,0 +1,56 @@
+{
+  "name": "file-renamer-tool",
+  "productName": "file-renamer-tool",
+  "version": "1.0.0",
+  "description": "A simple desktop app to rename multiple files in single go.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "wasimbeniwale <wasimb4@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "linux": [
+          "deb"
+        ]
+      },
+      "electronPackagerConfig": {},
+      "electronWinstallerConfig": {
+        "name": "file_renamer_tool"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "filerenamertool"
+      }
+    }
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "1.6.11",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1"
+  }
+}

@@ -1,0 +1,30 @@
+<ion-view view-title="Home">
+	<ion-content>
+
+		<div class="card padding">
+			<p> Note: If you don't want to rename perticular file(s) then don't enter any text in the "New File Name" column</p>
+		</div>
+
+		<div class="card">
+			<button class="button button-block button-positive" ng-click="getDirectory()">Choose File(s)</button>
+		</div>
+
+		<div class="card" ng-if="fileList.length > 0">
+			<div class="row">
+				<div class="col col-50"><b>Existing File Name</b></div>
+				<div class="col col-50"><b>New File Name</b></div>
+			</div>
+			<div class="row" ng-repeat="fileObj in fileList">
+				<div class="col col-50" ng-bind="fileObj.oldName"></div>
+				<div class="col col-50">
+					<input type="text" placeholder="Enter new file name here" ng-model="fileObj.newName"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button class="button button-block button-positive" ng-click="updateFileNames()">Update File(s)</button>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
