@@ -1,3 +1,6 @@
+# Review
+http://www.softpedia.com/get/File-managers/File-Renamer-Tool.shtml
+
 # File Renamer Tool
 A simple cross platform (currently only win x64 is supported) desktop app to rename multiple files in a single go. Built with awesome electron framework and with ionic's side menu template.
 
