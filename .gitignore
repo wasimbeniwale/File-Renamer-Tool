@@ -59,4 +59,5 @@ typings/
 
 # build files
 build/
+out/
 
